@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("EntityFramework_MVC")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d4c656864dda5ff95e6ddbf20829b5640d45d965")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6e6a1b1f2dbbe6055719b6201e4ac75608821080")]
 [assembly: System.Reflection.AssemblyProductAttribute("EntityFramework_MVC")]
 [assembly: System.Reflection.AssemblyTitleAttribute("EntityFramework_MVC")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

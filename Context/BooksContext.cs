@@ -1,4 +1,5 @@
 using Microsoft.EntityFrameworkCore;
+using Microsoft.JSInterop.Infrastructure;
 
 
 // Database'i oluşturalım
@@ -19,5 +20,18 @@ public class BooksDbContext : DbContext
     {
 
     }
+
+    // Veri tabanını terminal ekranından oluşturmak için 3 komut girmeye ihtiyacımız var bunlar
+     
+     // Migration'ın yüklenmesi için, 
+    // dotnet tool install --global dotnet-ef --version 9.*
+
+     // Migration oluşturmak için kullanılır!! (Migration : kod tarafında yazılan kodları veri tabanına göndermek için hazırlayan bir yapıdır!!)
+     // dotnet ef migrations add InitialCreate  
+
+     // migration çalıştıktan sonra
+     // kod tarafındaki eklenen veri tabanı ve tablonun veri tabanına işlenmesi için 
+     // dotnet ef database update komutunu çalıştırmanız gerekmektedir!!.
+}
 
 }

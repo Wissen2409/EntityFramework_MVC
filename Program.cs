@@ -7,7 +7,7 @@ builder.Services.AddControllersWithViews();
 
 // veri tabanı ayarlarını yapalım!!
 builder.Services.AddDbContext<BooksDbContext>(option=>
-option.UseSqlServer("Server=db4856.public.databaseasp.net; Database=BookStore; User Id=db4856; Password=Ni4!7@wA-E2r; Encrypt=True; TrustServerCertificate=True; MultipleActiveResultSets=True;"));
+option.UseSqlServer("Server=localhost; Database=BookStore; User Id=sa; Password=reallyStrongPwd123; Encrypt=True; TrustServerCertificate=True; MultipleActiveResultSets=True;"));
 
 
 var app = builder.Build();
@@ -32,3 +32,10 @@ app.MapControllerRoute(
     pattern: "{controller=Home}/{action=Index}/{id?}");
 
 app.Run();
+
+
+// Microsoft.EntityFrameworkCore
+
+// Microsoft.EntityFrameworkCore.SqlServer
+
+// Microsoft.EntityFrameworkCore.Tools

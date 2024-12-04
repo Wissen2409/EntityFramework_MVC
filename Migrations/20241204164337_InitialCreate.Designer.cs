@@ -10,7 +10,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace EntityFramework_MVC.Migrations
 {
     [DbContext(typeof(BooksDbContext))]
-    [Migration("20241204162359_InitialCreate")]
+    [Migration("20241204164337_InitialCreate")]
     partial class InitialCreate
     {
         /// <inheritdoc />
@@ -35,8 +35,8 @@ namespace EntityFramework_MVC.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<decimal>("Price")
-                        .HasColumnType("decimal(18,2)");
+                    b.Property<int>("Price")
+                        .HasColumnType("int");
 
                     b.Property<int>("Stock")
                         .HasColumnType("int");
