@@ -46,13 +46,13 @@ public class HomeController : Controller
         // hiç bir şekilde veri tabanı açmadan, veri tabanı oluşturup içerisne tablolar oluşturup, aynı zamanda sorguyalabileceğiz
         //_context.Database.EnsureCreated();
 
-        _context.Books.Add(new Book(){  Name="Book1", Price=1, Stock=10});
-        _context.Books.Add(new Book(){ Name="Book2", Price=1, Stock=10});
-        _context.Books.Add(new Book(){  Name="Book3", Price=1, Stock=10});
-        _context.Books.Add(new Book(){  Name="Book4", Price=1, Stock=10});
-        _context.Books.Add(new Book(){  Name="Book5", Price=1, Stock=10});
-        _context.Books.Add(new Book(){  Name="Book6", Price=1, Stock=10});
-        _context.Books.Add(new Book(){  Name="Book7", Price=1, Stock=10});
+        _context.Books.Add(new Book() { Name = "Book1", Price = 1, Stock = 10 });
+        _context.Books.Add(new Book() { Name = "Book2", Price = 1, Stock = 10 });
+        _context.Books.Add(new Book() { Name = "Book3", Price = 1, Stock = 10 });
+        _context.Books.Add(new Book() { Name = "Book4", Price = 1, Stock = 10 });
+        _context.Books.Add(new Book() { Name = "Book5", Price = 1, Stock = 10 });
+        _context.Books.Add(new Book() { Name = "Book6", Price = 1, Stock = 10 });
+        _context.Books.Add(new Book() { Name = "Book7", Price = 1, Stock = 10 });
 
         // context üzeirnden books tablosuna veri ekledik!!
 
@@ -61,7 +61,7 @@ public class HomeController : Controller
         // SaveChange yapılan değişikliklerin(insert,update,delete) veri tabanına yansımasını sağlar!!.
 
         // oluşturduğumuz yeni kayıtları veri tabanına aktaralım!!
-        _context.SaveChanges();
+        //_context.SaveChanges();
 
         return View();
     }
