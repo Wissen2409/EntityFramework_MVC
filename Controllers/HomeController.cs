@@ -44,7 +44,7 @@ public class HomeController : Controller
         //Bu örnekte, Code First yaklaşımı yapılacaktır!!
 
         // hiç bir şekilde veri tabanı açmadan, veri tabanı oluşturup içerisne tablolar oluşturup, aynı zamanda sorguyalabileceğiz
-        _context.Database.EnsureCreated();
+        //_context.Database.EnsureCreated();
 
         return View();
     }
