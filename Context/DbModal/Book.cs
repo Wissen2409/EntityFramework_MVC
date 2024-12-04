@@ -10,6 +10,6 @@ public class Book
     // dotnet ef migrations add InitialCreate       
 
 
-    / 
+    
     // dotnet tool install --global dotnet-ef --version 9.*
 }
